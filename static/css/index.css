@@ -1,0 +1,20 @@
+div.glavni{
+    margin-top: 15%;
+}
+div.logOut{
+margin-top: 1%;
+  text-align: center;
+    
+}
+div.logbtn{
+    text-align: center;
+}
+
+body{
+    background-image: url("pozadina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-label{
+    color: white;
+}

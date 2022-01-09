@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>crudUser</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        
+
+        
+        <script src="/crudUser.js"></script>
+        <link rel="shortcut icon" href="#">
+
+    </head>
+    <body  onload="user()">
+        <div class="dodavanje">
+            <div>
+                <label>DODAVANJE USERA:</label>
+            </div>
+            <div class="mb-3">
+                <label for="reg_email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="addEmail" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="reg_pass" class="form-label">Password</label>
+                <input type="password" class="form-control" id="addPass">
+            </div>
+            <div class="mb-3">
+                <label for="reg_fname" class="form-label">Username</label>
+                <input class="form-control" id="addName">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnAddUser">RegisterUser</button>           
+        </div>
+        <hr>
+        <div class="brisanje">
+            <div>
+                <label>BRISANJE USERA:</label>
+            </div>
+            <div class="mb-3">
+                <label>ID:</label>
+                <input class="form-control" id="deleteUser">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="btnDeleteUser">DeleteUser</button>           
+        </div>
+        <hr>
+        <div class="menjanjeUloge">
+            <div>
+                <label>MENJANJE ULOGE USERA:</label>
+            </div>
+            <div class="mb-3">
+                <label>NoviRoleId:</label>
+                <input class="form-control" id="noviRoleId">
+            </div>
+            <div class="mb-3">
+                <label>UserID:</label>
+                <input class="form-control" id="userIdUpdate">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="btnChangeRoleId">ChangeRoleId</button>           
+        </div>
+        <hr>
+        <label>PrikazUsera:</label>
+        <div class="userList" id="content">
+           
+        </div>
+    </body>
+</html>
